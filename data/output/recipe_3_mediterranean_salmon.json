@@ -1,0 +1,136 @@
+{
+  "recipe_name": "Mediterranean Herb-Crusted Salmon",
+  "chef": "Chef Jean-Pierre Dubois",
+  "yield_count": 120,
+  "allergens": [
+    "Fish",
+    "Dairy",
+    "Gluten"
+  ],
+  "components": [
+    {
+      "name": "Herb-Crusted Salmon",
+      "type": "protein",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 14,
+      "cook_temp_fahrenheit": 350,
+      "cook_method": "convection",
+      "portion_weight_grams": 130,
+      "ingredients": [
+        {
+          "name": "Atlantic salmon fillet",
+          "amount_per_portion_grams": 110
+        },
+        {
+          "name": "Herb crust mixture",
+          "amount_per_portion_grams": 20
+        },
+        {
+          "name": "Kosher salt",
+          "amount_per_portion_grams": 1.5
+        },
+        {
+          "name": "Black pepper",
+          "amount_per_portion_grams": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Lemon Quinoa Pilaf",
+      "type": "starch",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 18,
+      "cook_temp_fahrenheit": 180,
+      "cook_method": "simmer",
+      "portion_weight_grams": 170,
+      "ingredients": [
+        {
+          "name": "Quinoa, dry",
+          "amount_per_portion_grams": 55
+        },
+        {
+          "name": "Vegetable stock",
+          "amount_per_portion_grams": 110
+        },
+        {
+          "name": "Lemon juice",
+          "amount_per_portion_grams": 8
+        },
+        {
+          "name": "Butter",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "Shallots, minced",
+          "amount_per_portion_grams": 10
+        }
+      ]
+    },
+    {
+      "name": "Roasted Mediterranean Blend",
+      "type": "vegetable",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 22,
+      "cook_temp_fahrenheit": 400,
+      "cook_method": "roast",
+      "portion_weight_grams": 110,
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "amount_per_portion_grams": 35
+        },
+        {
+          "name": "Bell peppers (mixed)",
+          "amount_per_portion_grams": 30
+        },
+        {
+          "name": "Cherry tomatoes",
+          "amount_per_portion_grams": 25
+        },
+        {
+          "name": "Red onion",
+          "amount_per_portion_grams": 20
+        },
+        {
+          "name": "Olive oil",
+          "amount_per_portion_grams": 4
+        },
+        {
+          "name": "Herbs de Provence",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    },
+    {
+      "name": "Tzatziki",
+      "type": "sauce",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 0,
+      "cook_temp_fahrenheit": 0,
+      "cook_method": "mix",
+      "portion_weight_grams": 45,
+      "ingredients": [
+        {
+          "name": "Greek yogurt",
+          "amount_per_portion_grams": 30
+        },
+        {
+          "name": "Cucumber, grated/drained",
+          "amount_per_portion_grams": 10
+        },
+        {
+          "name": "Lemon juice",
+          "amount_per_portion_grams": 3
+        },
+        {
+          "name": "Garlic, minced",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "Dill, fresh",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    }
+  ]
+}

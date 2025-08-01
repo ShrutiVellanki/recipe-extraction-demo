@@ -1,0 +1,161 @@
+{
+  "recipe_name": "Carlos's Beef Barbacoa Bowls",
+  "chef": "Chef Carlos",
+  "yield_count": 90,
+  "allergens": [
+    "dairy"
+  ],
+  "components": [
+    {
+      "name": "Beef Barbacoa",
+      "type": "protein",
+      "prep_time_minutes": 1440,
+      "cook_time_minutes": 210,
+      "cook_temp_fahrenheit": 325,
+      "cook_method": "braise",
+      "portion_weight_grams": 145,
+      "ingredients": [
+        {
+          "name": "beef chuck",
+          "amount_per_portion_grams": 150
+        },
+        {
+          "name": "guajillo chiles",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "chipotles in adobo",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "lime juice",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount_per_portion_grams": 3
+        },
+        {
+          "name": "garlic",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "cumin",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "oregano",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "beef stock",
+          "amount_per_portion_grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Cilantro Lime Rice",
+      "type": "starch",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 20,
+      "cook_temp_fahrenheit": 212,
+      "cook_method": "boil",
+      "portion_weight_grams": 165,
+      "ingredients": [
+        {
+          "name": "dry rice",
+          "amount_per_portion_grams": 60
+        },
+        {
+          "name": "lime zest",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "lime juice",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "cilantro",
+          "amount_per_portion_grams": 2
+        }
+      ]
+    },
+    {
+      "name": "Black Beans",
+      "type": "vegetable",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 10,
+      "cook_temp_fahrenheit": 350,
+      "cook_method": "saut\u00e9",
+      "portion_weight_grams": 85,
+      "ingredients": [
+        {
+          "name": "black beans",
+          "amount_per_portion_grams": 80
+        },
+        {
+          "name": "onions",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "garlic",
+          "amount_per_portion_grams": 1
+        },
+        {
+          "name": "cumin",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    },
+    {
+      "name": "Salsa Verde",
+      "type": "sauce",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 20,
+      "cook_temp_fahrenheit": 400,
+      "cook_method": "roast",
+      "portion_weight_grams": 40,
+      "ingredients": [
+        {
+          "name": "tomatillos",
+          "amount_per_portion_grams": 25
+        },
+        {
+          "name": "jalape\u00f1os",
+          "amount_per_portion_grams": 2
+        },
+        {
+          "name": "white onions",
+          "amount_per_portion_grams": 10
+        },
+        {
+          "name": "cilantro",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "salt",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    },
+    {
+      "name": "Toppings",
+      "type": "sauce",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 0,
+      "cook_temp_fahrenheit": 0,
+      "cook_method": "none",
+      "portion_weight_grams": 20,
+      "ingredients": [
+        {
+          "name": "cotija cheese",
+          "amount_per_portion_grams": 15
+        },
+        {
+          "name": "pepitas",
+          "amount_per_portion_grams": 5
+        }
+      ]
+    }
+  ]
+}

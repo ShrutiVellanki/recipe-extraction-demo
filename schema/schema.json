@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "description": "Recipe extraction schema for food production workflows",
+  "properties": {
+    "recipe_name": {
+      "type": "string",
+      "description": "Name of the recipe"
+    },
+    "chef": {
+      "type": "string", 
+      "description": "Name of the chef who created the recipe"
+    },
+    "yield_count": {
+      "type": "number",
+      "description": "Number of portions this recipe yields"
+    },
+    "allergens": {
+      "type": "array",
+      "description": "Array of allergen strings (e.g., soy, wheat, dairy)",
+      "items": {"type": "string"}
+    },
+    "components": {
+      "type": "array",
+      "description": "Array of recipe components (protein, starch, vegetable, sauce)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the component"
+          },
+          "type": {
+            "type": "string",
+            "description": "Component type: protein, starch, vegetable, or sauce",
+            "enum": ["protein", "starch", "vegetable", "sauce"]
+          },
+          "prep_time_minutes": {
+            "type": "number",
+            "description": "Preparation time in minutes"
+          },
+          "cook_time_minutes": {
+            "type": "number",
+            "description": "Cooking time in minutes"
+          },
+          "cook_temp_fahrenheit": {
+            "type": "number",
+            "description": "Cooking temperature in Fahrenheit (if applicable)"
+          },
+          "cook_method": {
+            "type": "string",
+            "description": "Cooking method (e.g., bake, grill, sauté, steam)"
+          },
+          "portion_weight_grams": {
+            "type": "number",
+            "description": "Final weight per container in grams"
+          },
+          "ingredients": {
+            "type": "array",
+            "description": "Array of ingredients for this component",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the ingredient"
+                },
+                "amount_per_portion_grams": {
+                  "type": "number",
+                  "description": "Amount of ingredient per portion in grams"
+                }
+              },
+              "required": ["name", "amount_per_portion_grams"]
+            }
+          }
+        },
+        "required": ["name", "type", "prep_time_minutes", "cook_time_minutes", "cook_temp_fahrenheit", "cook_method", "portion_weight_grams", "ingredients"]
+      }
+    }
+  },
+  "required": ["recipe_name", "chef", "yield_count", "allergens", "components"]
+} 
