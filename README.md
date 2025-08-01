@@ -49,7 +49,7 @@ recipe-extraction-challenge/
 └── README.md          # Documentation
 ```
 
---
+---
 
 ## 🛠️ Tool Selection & Flow
 

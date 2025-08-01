@@ -1,0 +1,5 @@
+PyMuPDF==1.23.8
+python-dotenv==1.0.0
+langchain==0.1.0
+langchain-openai==0.0.5
+langchain-core==0.1.10 
