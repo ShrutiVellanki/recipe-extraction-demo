@@ -1,0 +1,25 @@
+{
+    "recipe_name": "string",
+    "chef": "string",
+    "yield_count": "number",
+    "allergens": [
+        "array of strings"
+    ],
+    "components": [
+        {
+            "name": "string",
+            "type": "protein|starch|vegetable|sauce",
+            "prep_time_minutes": "number",
+            "cook_time_minutes": "number",
+            "cook_temp_fahrenheit": "number (if applicable)",
+            "cook_method": "string",
+            "portion_weight_grams": "number (final weight per container)",
+            "ingredients": [
+                {
+                    "name": "string",
+                    "amount_per_portion_grams": "number"
+                }
+            ]
+        }
+    ]
+}
