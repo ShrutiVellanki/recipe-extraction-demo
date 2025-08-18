@@ -46,6 +46,8 @@ recipe-extraction-challenge/
 │   ├── extract.py      # Main extraction script
 ├── schema/
 │   └── schema.json     # JSON schema definition
+├── prompt/
+│   └── recipe_extraction_prompt.txt
 ├── requirements.txt     # Dependencies
 ├── env_example.txt     # Environment template
 └── README.md          # Documentation
@@ -62,9 +64,15 @@ recipe-extraction-challenge/
 
 1. **Extract** text from PDF using PyMuPDF
    - **PyMuPDF (fitz)**: Fast, reliable PDF text extraction with complex layout handling
+      - [Benchmarks](https://github.com/py-pdf/benchmarks) well across text extraction speed and quality
 
 2. **Parse** recipe text using GPT-4 via LangChain
    - **LangChain**: Provides error handling, built-in JSON parsing, and easy prompt engineering
+      - Orchestration layer for future use (multi-step parsing):
+         - e.g. could connect [LlamaParse](https://www.llamaindex.ai/llamaparse) for PDF parsing when PDFs have figures
+         - e.g. could connect to custom multilingual model for handwritten text
+         - e.g. could connect to database that had nutritional information 
+      - Models are swappable via LangChain config (Claude, Gemini, GPT, etc.)
    - **GPT-4**: Superior understanding of recipe structure and cooking terminology
 
 3. **Structure** output as JSON using LangChain's JsonOutputParser
@@ -75,6 +83,18 @@ recipe-extraction-challenge/
 #### Data Management
 - **Python-dotenv**: Secure API key management
 
+#### Other Tools Considered
+- [LlamaIndex](https://www.llamaindex.ai/) (future use, could cross reference with an index of similar recipes)
+- LlamaParse (future use, could introduce parsing for PDFs with figures)
+- Vanilla API calls instead of frameworks for RAG
+
+--- 
+
+## Prompting Approach
+- **Tradeoff**: fallback logic, less flexibility, more structure (picked because structure is more essential for prepped meals)
+- **Schema-based prompting**: guardrails in place so that LLM knows what its working toward
+- **Future improvement**: Few Shot Prompting, gives the LLM examples of effective parsing
+
 ---
 
 ## 🔧 Assumptions & Accuracy
@@ -84,7 +104,7 @@ recipe-extraction-challenge/
 - **Chef names**: Only extracted from explicit mentions (no hallucination)
 
 #### What Works Well
-- **Structured Prompts:** help make sense of ambigious / missing data 
+- **Structured Prompts:** help make sense of ambiguous / missing data 
 - **JSON Parsing:** adheres to schema after multiple iterations
 
 #### What Needs Improvement
@@ -94,14 +114,25 @@ recipe-extraction-challenge/
 
 ## 🚀 Future Improvements 
 
+**What I wish I'd done differently:**
+- Leverage Langchain better (e.g. use its [PyMuPDFLoader](https://python.langchain.com/docs/integrations/document_loaders/pymupdf/))
+- Batch process PDFs to see if it improves processing speed
+
 **Given 2 Hours..**
 - I would do an in-depth validation of JSON Outputs with **unit tests**. I would also validate allergen outputs against a **known allergens list**. 
 
 **Given 2 Weeks...**
-- I would **fine-tune a custom GPT** on a wider variety of recipe data and add add a **front-end review UI** for upload + review + correction.
+- I would **fine-tune a custom GPT** on a wider variety of recipe data (pairs of recipe data + JSON output) and add a **front-end review UI** for upload + review + correction.
 
 **To Scale...**
-- I would implement a **human-in-the-loop review system**, as well as an **analystics dashboard** to show **per-field parsing confidence**.
+- I would implement a **human-in-the-loop review system**, as well as an **analytics dashboard** to show **per-field parsing confidence**.
+
+   - Per-Field Confidence Scores could be derived from...
+      1. Heuristics: (e.g. whether portion sizes are explicitly mentioned, mathematically derived, or best guesses)
+      2. Agent-as-judge: An AI Agent can explain how confident it is about certain fields
+      3. Human review: A human can sanity check fields for confidence by annotating JSON output
+   - Proposed Tool: [LangSmith](https://www.langchain.com/langsmith) is an observability and [evaluation](https://www.langchain.com/evaluation) platform for AI models. It works well with the LangChain ecosystem and lets us avoid the hassle of building and configuring UI
+   - Other key metrics: extraction speed, per field confidence, overall confidence, error rate
 
 ---
 
