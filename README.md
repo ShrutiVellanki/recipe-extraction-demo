@@ -2,8 +2,6 @@
 
 A Python-based solution for extracting recipe data from PDFs using GPT-4, LangChain, and PyMuPDF.
 
-This project is created for the CookUnity recipe extraction challenge.
-
 [Demo](https://www.loom.com/share/dada9955b1fa4f92a69dd31d77d56442?sid=8cee7d59-657c-45cb-964f-7a783104450d)
 
 ---
