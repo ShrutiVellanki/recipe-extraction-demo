@@ -15,8 +15,8 @@ class RecipeExtractor:
     def __init__(self, recipe_schema, prompt_template):
         """Initialize the recipe extractor with LangChain components"""
         self.llm = ChatOpenAI(
-            model="gpt-4",
-            temperature=0.1,
+            model="gpt-5",
+            temperature=1,  # GPT-5 only supports default temperature (1)
             api_key=os.getenv('OPENAI_API_KEY')
         )
         self.output_parser = JsonOutputParser()
@@ -36,7 +36,7 @@ class RecipeExtractor:
             return None
 
     def parse_recipe_text(self, text):
-        """Parse recipe text using LangChain and GPT-4 with schema validation"""
+        """Parse recipe text using LangChain and GPT-5 with schema validation"""
         try:
             # Create the chain with schema validation
             chain = self.prompt_template | self.llm | self.output_parser

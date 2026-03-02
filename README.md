@@ -1,6 +1,6 @@
 # 🍳 Recipe Extraction Challenge
 
-A Python-based solution for extracting recipe data from PDFs using GPT-4, LangChain, and PyMuPDF.
+A Python-based solution for extracting recipe data from PDFs using GPT-5, LangChain, and PyMuPDF.
 
 [Demo](https://www.loom.com/share/dada9955b1fa4f92a69dd31d77d56442?sid=8cee7d59-657c-45cb-964f-7a783104450d)
 
@@ -64,14 +64,14 @@ recipe-extraction-challenge/
    - **PyMuPDF (fitz)**: Fast, reliable PDF text extraction with complex layout handling
       - [Benchmarks](https://github.com/py-pdf/benchmarks) well across text extraction speed and quality
 
-2. **Parse** recipe text using GPT-4 via LangChain
+2. **Parse** recipe text using GPT-5 via LangChain
    - **LangChain**: Provides error handling, built-in JSON parsing, and easy prompt engineering
       - Orchestration layer for future use (multi-step parsing):
          - e.g. could connect [LlamaParse](https://www.llamaindex.ai/llamaparse) for PDF parsing when PDFs have figures
          - e.g. could connect to custom multilingual model for handwritten text
          - e.g. could connect to database that had nutritional information 
       - Models are swappable via LangChain config (Claude, Gemini, GPT, etc.)
-   - **GPT-4**: Superior understanding of recipe structure and cooking terminology
+   - **GPT-5**: Superior understanding of recipe structure and cooking terminology
 
 3. **Structure** output as JSON using LangChain's JsonOutputParser
 

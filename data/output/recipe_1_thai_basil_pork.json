@@ -1,0 +1,116 @@
+{
+  "recipe_name": "Thai Basil Pork Bowl",
+  "chef": "Chef Kenji Tanaka",
+  "yield_count": 90,
+  "allergens": [
+    "fish",
+    "soy",
+    "shellfish"
+  ],
+  "components": [
+    {
+      "name": "Thai Basil Pork",
+      "type": "protein",
+      "prep_time_minutes": 12,
+      "cook_time_minutes": 10,
+      "cook_temp_fahrenheit": 450,
+      "cook_method": "stir-fry",
+      "portion_weight_grams": 115,
+      "ingredients": [
+        {
+          "name": "Pork shoulder, thinly sliced",
+          "amount_per_portion_grams": 100
+        },
+        {
+          "name": "Thai basil",
+          "amount_per_portion_grams": 8
+        },
+        {
+          "name": "Garlic, minced",
+          "amount_per_portion_grams": 3
+        },
+        {
+          "name": "Vegetable oil",
+          "amount_per_portion_grams": 5
+        }
+      ]
+    },
+    {
+      "name": "Jasmine Rice",
+      "type": "starch",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 18,
+      "cook_temp_fahrenheit": 212,
+      "cook_method": "steam",
+      "portion_weight_grams": 185,
+      "ingredients": [
+        {
+          "name": "Jasmine rice, dry",
+          "amount_per_portion_grams": 70
+        },
+        {
+          "name": "Water",
+          "amount_per_portion_grams": 140
+        },
+        {
+          "name": "Salt",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    },
+    {
+      "name": "Stir-Fried Green Beans",
+      "type": "vegetable",
+      "prep_time_minutes": 15,
+      "cook_time_minutes": 6,
+      "cook_temp_fahrenheit": 450,
+      "cook_method": "stir-fry",
+      "portion_weight_grams": 90,
+      "ingredients": [
+        {
+          "name": "Green beans",
+          "amount_per_portion_grams": 50
+        },
+        {
+          "name": "Red bell pepper, sliced",
+          "amount_per_portion_grams": 25
+        },
+        {
+          "name": "Oyster sauce",
+          "amount_per_portion_grams": 8
+        },
+        {
+          "name": "Vegetable oil",
+          "amount_per_portion_grams": 3
+        }
+      ]
+    },
+    {
+      "name": "Spicy Lime Sauce",
+      "type": "sauce",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 2,
+      "cook_temp_fahrenheit": 0,
+      "cook_method": "mix",
+      "portion_weight_grams": 30,
+      "ingredients": [
+        {
+          "name": "Fish sauce",
+          "amount_per_portion_grams": 12
+        },
+        {
+          "name": "Lime juice",
+          "amount_per_portion_grams": 10
+        },
+        {
+          "name": "Sugar",
+          "amount_per_portion_grams": 6
+        },
+        {
+          "name": "Chili flakes",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    }
+  ]
+}
