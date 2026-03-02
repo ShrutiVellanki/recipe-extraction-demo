@@ -1,33 +1,37 @@
-# Demo: Recipe PDF to JSON Extraction
+## 👋 Welcome
 
-So what I've built here is a **Python-based solution** for extracting recipe data from a PDF file to a JSON file.
+I'm **Shruti**, a Toronto-based **Software Engineer**. 👩‍💻 
 
-It's built with **GPT-5**, **Python**, and **PyMuPDF**.
-
----
-
-Here are some raw recipe PDFs. As you can see, it's formatted for humans — inconsistent spacing, mixed units, and no strict structure.
-
-I drop it into **`data/input/`** and run the extractor from the terminal (**`src/extract.py`**).
-
-Behind the scenes, the pipeline:
-
-1. Parses the PDF into text (PyMuPDF)  
-2. Sends it to the model with the instructions in **`prompts/recipe_extraction_prompt.txt`**  
-3. Forces the output into the structure defined in **`schema/schema.json`**  
-
-Here's the generated JSON output in **`data/output/`**. You can see:
-
-- **Ingredients** per component as name and amount per portion (grams)  
-- **Components** with prep/cook times, cooking method, and portion weights  
-- **Metadata** — recipe name, chef, yield, and allergens — captured consistently  
-
-**`schema/schema.json`** acts as a **contract** — the output must conform to these required fields before it's accepted.
-
-If validation fails, the run is **rejected** instead of silently passing malformed data downstream.
+This is a showcase of an AI-driven workflow that takes chaotic, human-written recipes and transforms them into clean, validated data—fueling food operations at scale.
 
 ---
 
-What's important is **consistency**. Here are three different recipes with very different formatting — and despite that variation, the output structure remains identical across all of them.
+## ⚙️ Workflow Snapshot
 
-That consistency is what makes the system scalable.
+- **Python app** that extracts recipe data from PDF to JSON
+- Powered by **GPT-5**, **Python**, **PyMuPDF**
+
+| Step            | Description                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| **1. Input**    | Drop messy recipe PDFs in `data/input`                                                   |
+| **2. Extract**  | Run `src/extract.py` from the terminal                                                   |
+| **3. Parse**    | Convert PDF content to raw text using `PyMuPDF`                                          |
+| **4. AI Pass**  | Send the text (plus prompts) to the AI for extraction                                    |
+| **5. Structure**| Enforce output to fit `schema.json`                                                      |
+| **6. Output**   | Get clean JSON with detailed components in `data/output/`                                |
+| **7. Validate** | Everything checked against the schema contract; non-conforming outputs are rejected      |
+
+**Output consistency**—even with messy inputs—is what unlocks true operational scale.
+
+---
+
+## 💡 Value at a Glance
+
+| Challenge / Stage                  | Description                                                                                      |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **🗂️ Legacy Pain**                 | Slow, inconsistent manual entry. Scaling requires standardization and normalization.              |
+| **⚡ Solution**                     | AI + schema validation = reliable, structured data for nutrition, costing, production—at scale.  |
+| **🤖 AI's Role**                    | Parse unstructured input, enforce structure, and increase throughput at scale.  |
+| **❓ First Failure: Ambiguity**     | Ambiguities (missing data, poor formatting, images) compound; automation unchecked is risky.      |
+| **🕵️ Human Review: Uncertainty**   | Humans review edge cases, supervise low-confidence output (human-in-the-loop).                    |
+| **👨‍🍳 Human Review: Taste**        | Flavor, substitutions, and rollout decisions always remain human-led.                             |

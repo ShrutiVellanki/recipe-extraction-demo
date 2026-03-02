@@ -1,4 +1,4 @@
-# 🍳 Recipe Extraction Challenge
+# 🍳 Recipe Extraction Demo
 
 A Python-based solution for extracting recipe data from PDFs using GPT-5, LangChain, and PyMuPDF.
 
