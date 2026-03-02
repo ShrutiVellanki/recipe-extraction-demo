@@ -1,0 +1,135 @@
+{
+  "recipe_name": "Pan-Seared Halibut with Spring Vegetables",
+  "chef": "Chef Yuki Nakamura",
+  "yield_count": 100,
+  "allergens": [
+    "fish",
+    "dairy"
+  ],
+  "components": [
+    {
+      "name": "Pan-Seared Halibut",
+      "type": "protein",
+      "prep_time_minutes": 12,
+      "cook_time_minutes": 12,
+      "cook_temp_fahrenheit": 400,
+      "cook_method": "saut\u00e9",
+      "portion_weight_grams": 140,
+      "ingredients": [
+        {
+          "name": "Halibut fillet",
+          "amount_per_portion_grams": 130
+        },
+        {
+          "name": "Olive oil",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "Lemon juice",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "Kosher salt",
+          "amount_per_portion_grams": 1.5
+        },
+        {
+          "name": "Black pepper",
+          "amount_per_portion_grams": 0.5
+        },
+        {
+          "name": "Fresh dill",
+          "amount_per_portion_grams": 2
+        }
+      ]
+    },
+    {
+      "name": "Garlic Mashed Potatoes",
+      "type": "starch",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 20,
+      "cook_temp_fahrenheit": 212,
+      "cook_method": "boil",
+      "portion_weight_grams": 180,
+      "ingredients": [
+        {
+          "name": "Russet potatoes",
+          "amount_per_portion_grams": 150
+        },
+        {
+          "name": "Butter",
+          "amount_per_portion_grams": 10
+        },
+        {
+          "name": "Garlic, roasted",
+          "amount_per_portion_grams": 3
+        },
+        {
+          "name": "Cream",
+          "amount_per_portion_grams": 15
+        },
+        {
+          "name": "Salt",
+          "amount_per_portion_grams": 1
+        }
+      ]
+    },
+    {
+      "name": "Saut\u00e9ed Spring Vegetables",
+      "type": "vegetable",
+      "prep_time_minutes": 12,
+      "cook_time_minutes": 6,
+      "cook_temp_fahrenheit": 400,
+      "cook_method": "saut\u00e9",
+      "portion_weight_grams": 90,
+      "ingredients": [
+        {
+          "name": "Asparagus",
+          "amount_per_portion_grams": 40
+        },
+        {
+          "name": "Peas",
+          "amount_per_portion_grams": 25
+        },
+        {
+          "name": "Fennel, sliced",
+          "amount_per_portion_grams": 20
+        },
+        {
+          "name": "Olive oil",
+          "amount_per_portion_grams": 4
+        },
+        {
+          "name": "Lemon zest",
+          "amount_per_portion_grams": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Brown Butter Caper Sauce",
+      "type": "sauce",
+      "prep_time_minutes": 7,
+      "cook_time_minutes": 8,
+      "cook_temp_fahrenheit": 325,
+      "cook_method": "saut\u00e9",
+      "portion_weight_grams": 25,
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount_per_portion_grams": 12
+        },
+        {
+          "name": "Capers",
+          "amount_per_portion_grams": 5
+        },
+        {
+          "name": "Lemon juice",
+          "amount_per_portion_grams": 4
+        },
+        {
+          "name": "Parsley, chopped",
+          "amount_per_portion_grams": 2
+        }
+      ]
+    }
+  ]
+}
