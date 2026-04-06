@@ -1,0 +1,98 @@
+{
+  "recipe_name": "Priya's Coconut Curry Vegetable Bowls",
+  "chef": "Chef Priya",
+  "yield_count": 80,
+  "allergens": [
+    "dairy",
+    "tree nuts"
+  ],
+  "components": [
+    {
+      "name": "Coconut Vegetable Curry",
+      "type": "vegetable",
+      "prep_time_minutes": 15,
+      "cook_time_minutes": 25,
+      "cook_temp_fahrenheit": 190,
+      "cook_method": "simmer",
+      "portion_weight_grams": 180,
+      "ingredients": [
+        {
+          "name": "Mixed vegetables",
+          "amount_per_portion_grams": 120
+        },
+        {
+          "name": "Coconut milk",
+          "amount_per_portion_grams": 50
+        },
+        {
+          "name": "Curry paste",
+          "amount_per_portion_grams": 10
+        }
+      ]
+    },
+    {
+      "name": "Basmati Rice",
+      "type": "starch",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 15,
+      "cook_temp_fahrenheit": 212,
+      "cook_method": "boil",
+      "portion_weight_grams": 80,
+      "ingredients": [
+        {
+          "name": "Cooked basmati rice (seasoned with cardamom and salt)",
+          "amount_per_portion_grams": 80
+        }
+      ]
+    },
+    {
+      "name": "Roasted Chickpeas",
+      "type": "protein",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 20,
+      "cook_temp_fahrenheit": 400,
+      "cook_method": "roast",
+      "portion_weight_grams": 60,
+      "ingredients": [
+        {
+          "name": "Roasted chickpeas (with oil, cumin, coriander, salt)",
+          "amount_per_portion_grams": 60
+        }
+      ]
+    },
+    {
+      "name": "Cucumber Mint Raita",
+      "type": "sauce",
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 0,
+      "cook_temp_fahrenheit": 0,
+      "cook_method": "mix",
+      "portion_weight_grams": 40,
+      "ingredients": [
+        {
+          "name": "Yogurt raita (yogurt, grated cucumber, mint, cumin, salt)",
+          "amount_per_portion_grams": 40
+        }
+      ]
+    },
+    {
+      "name": "Cilantro and Toasted Coconut Topping",
+      "type": "vegetable",
+      "prep_time_minutes": 5,
+      "cook_time_minutes": 8,
+      "cook_temp_fahrenheit": 350,
+      "cook_method": "toast",
+      "portion_weight_grams": 15,
+      "ingredients": [
+        {
+          "name": "Fresh cilantro",
+          "amount_per_portion_grams": 10
+        },
+        {
+          "name": "Toasted coconut",
+          "amount_per_portion_grams": 5
+        }
+      ]
+    }
+  ]
+}

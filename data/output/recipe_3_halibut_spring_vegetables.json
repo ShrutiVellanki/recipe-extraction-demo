@@ -10,7 +10,7 @@
     {
       "name": "Pan-Seared Halibut",
       "type": "protein",
-      "prep_time_minutes": 12,
+      "prep_time_minutes": 10,
       "cook_time_minutes": 12,
       "cook_temp_fahrenheit": 400,
       "cook_method": "saut\u00e9",
@@ -45,7 +45,7 @@
     {
       "name": "Garlic Mashed Potatoes",
       "type": "starch",
-      "prep_time_minutes": 10,
+      "prep_time_minutes": 12,
       "cook_time_minutes": 20,
       "cook_temp_fahrenheit": 212,
       "cook_method": "boil",
@@ -107,10 +107,10 @@
     {
       "name": "Brown Butter Caper Sauce",
       "type": "sauce",
-      "prep_time_minutes": 7,
-      "cook_time_minutes": 8,
-      "cook_temp_fahrenheit": 325,
-      "cook_method": "saut\u00e9",
+      "prep_time_minutes": 8,
+      "cook_time_minutes": 6,
+      "cook_temp_fahrenheit": 200,
+      "cook_method": "simmer",
       "portion_weight_grams": 25,
       "ingredients": [
         {
